@@ -25,3 +25,7 @@ dotnet --list-sdks
 3. Digite o comando `dotnet build` para a construção da aplicação.
 4. Digite o comando `dotnet watch run --project ./Consumer.MovieList.Api\Consumer.MovieList.Api.csproj`
 5. Acesasr o swagger pelo caminho: https://localhost:5001/swagger/index.html
+
+---
+### **Contato**
+https://www.linkedin.com/in/lucas-degang/
