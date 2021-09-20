@@ -9,7 +9,7 @@
 ### **Detalhes do projeto**
 - DB utilizado "InMemory".
 - Nível 2 de maturidade de Richardson
-- 
+- O arquivo de consumo da aplicação deverá ser disponibilizado em: "C:\temp" com a descrição do arquivo "movielist.csv".
 
 ---
 ### **Executando a Aplicação**
