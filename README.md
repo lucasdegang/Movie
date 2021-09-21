@@ -10,11 +10,11 @@
 - .Net Core 5.0
 - WebApi
 - Swagger
-- DB em modo "InMemory" (caso desejado preparado para uso o SqlServer)
+- DB em modo "InMemory" (caso desejado está preparado para uso o SqlServer)
 - Nível 2 de maturidade de Richardson
 - O arquivo de consumo da aplicação deverá ser disponibilizado em: "C:\temp" com a descrição do arquivo "movielist.csv"
 ### **Detalhes técnicos**
--
+-Na consulta dos intervalos, caso tenha somente uma recorrência, será listado somente no "min" a informação não será duplicada.
 ### **Executando a Aplicação**
 ### **Preparativos**
 - Verificar sdk compatível ao do projeto.
