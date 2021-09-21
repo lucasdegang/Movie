@@ -20,7 +20,9 @@ namespace Consumer.MovieList.Api.Domain.Movie.Service
         {
             var movie = _movieRepository.GetById(id);
 
-            if (movie != null) _movieRepository.Delete(id);
+            if (movie == null) throw new Exception($"Movie id {id} does not exists");
+
+            _movieRepository.Delete(id);
 
             return movie.Id;
         }
@@ -44,10 +46,7 @@ namespace Consumer.MovieList.Api.Domain.Movie.Service
         {
             var movie = _movieRepository.GetById(id);
 
-            if (movie == null)
-            {
-                throw new Exception($"Movie id {id} not found");
-            }
+            if (movie == null) throw new Exception($"Movie id {id} not found");
 
             return movie;
         }

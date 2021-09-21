@@ -1,5 +1,7 @@
+using Consumer.MovieList.Api.Infra;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -18,6 +20,10 @@ namespace Consumer.MovieList.Api
         public void ConfigureServices(IServiceCollection services)
         {
             Configurations.ServicesConfiguration.GetServiceProvider(services, Configuration);
+
+            //var connectionString = Configuration.GetConnectionString("Movie");
+            //services.AddDbContext<MovieDbContext>(options => options.UseSqlServer(connectionString));
+
             services.AddControllers();
         }
         
